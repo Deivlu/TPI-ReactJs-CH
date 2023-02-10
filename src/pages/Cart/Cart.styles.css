@@ -1,0 +1,120 @@
+.cart__container{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 2rem;
+}
+
+.cart__card{
+display: grid;
+grid-template-areas:
+"img content total"
+"img content total"
+"img content eliminar";
+grid-template-columns: 10rem 2fr 1.5fr;
+grid-template-rows: 0.3fr 0.3fr .7fr;
+gap: 2rem;
+width: 80vw;
+border-radius: 20px;
+border: 1px solid #ccc;
+background-color: #282C34;
+box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+color: white;
+padding: 10px;
+
+}
+
+.cart__card--img{
+    grid-area: img;
+    object-fit: cover;
+    width: 10rem;
+    height: 10rem;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+.cart__card--content{
+    grid-area: content;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+
+}
+.cart__card--total{
+    grid-area: total;
+    align-self: flex-start;
+    text-align: left;
+    padding-top: 20px;
+    justify-self: center;
+}
+.cart__card--eliminar{
+    grid-area: eliminar;
+    justify-self: center;
+    
+}
+.cart__card--finalizar{
+   
+    justify-self: center;
+    
+}
+.cart__card--finalizar--boton{
+    font-size: 1rem;
+    background-color: rgb(195, 218, 216);
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+}
+.cart__card--finalizar--boton:disabled{
+   visibility: hidden;
+}
+.cart__card--send{
+    border-radius: 20px;
+    margin: 30px;
+    padding: 30px;
+    text-align: right;
+    border: 1px solid #ccc;
+    background-color: #282C34;
+    color: white;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+@media screen and (max-width: 500px){
+    .cart__card--img{
+        grid-area: img;
+        object-fit: cover;
+        width: 5rem;
+        height: 5rem;
+        margin-top: 30px;
+
+    }
+
+    .cart__card{
+        grid-template-areas:
+        "content content img"
+        "content content img"
+        "total total eliminar";
+        font-size: smaller;
+        grid-template-columns: 5rem 2fr 2fr;
+        gap: 10px;
+        width: 90vw;
+        }
+
+    .cart__card--total{
+        padding-top: 0px;
+        margin: 0 left;
+    }
+    .cart__card--content{
+        grid-area: content;
+        margin: 0 auto;
+        padding: 10px;
+        
+    
+    }
+}

@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Poiret+One&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Assistant', sans-serif;
+  font-size: large;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(161, 161, 163);
+  background-image: url("https://i.imgur.com/olrtXOq.jpg");
+  background-size: cover;
+  background-position: top center;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+

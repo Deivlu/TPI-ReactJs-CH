@@ -1,0 +1,22 @@
+.item-list{
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+
+.items-links{
+    margin: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: all 0.5s;
+    
+}
+
+.items-links:hover{
+    transform: scale(97%);
+}
+
+
