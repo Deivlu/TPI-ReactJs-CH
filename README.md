@@ -8,7 +8,7 @@ Este proyecto fue creado con [Create React App](https://github.com/facebook/crea
 Como primer proyecto del curso de REACT JS, desarrollé este sitio e-commerce.
 
 <p align="center">
-  <img src="/public/GifProyecto.mp4">
+  <img src="/public/GifProyecto.gif">
 </p>
 
 ✔ web site: <a href="" target="_blank">
